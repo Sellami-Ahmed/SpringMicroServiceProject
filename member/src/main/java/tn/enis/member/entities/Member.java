@@ -17,8 +17,7 @@ import java.util.Date;
 @NoArgsConstructor
 @RequiredArgsConstructor
 public abstract class Member implements Serializable {
-    @Transient
-    Collection<PublicationBean> pubs;
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -37,4 +36,6 @@ public abstract class Member implements Serializable {
     private String email;
     @NonNull
     private String password;
+    @Transient
+    Collection<PublicationBean> pubs;
 }

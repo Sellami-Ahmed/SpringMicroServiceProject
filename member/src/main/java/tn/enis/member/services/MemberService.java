@@ -121,7 +121,6 @@ public class MemberService implements IMemberService {
 
     }
 
-
     @Override
     public List<PublicationBean> findPublicationParAuteur (Long idauteur) {
         List<PublicationBean> pubs = new ArrayList<>();

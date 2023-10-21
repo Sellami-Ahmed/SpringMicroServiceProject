@@ -25,8 +25,8 @@ public class Etudiant extends Member {
 
     @Builder
 
-    public Etudiant (Collection<PublicationBean> pubs, Long id, @NonNull String cin, @NonNull String nom, @NonNull String prenom, @NonNull Date dateNaissance, Byte photo, String cv, @NonNull String email, @NonNull String password, @NonNull Date dateInscription, @NonNull String diplome, EnseignantChercheur encadrant) {
-        super(pubs, id, cin, nom, prenom, dateNaissance, photo, cv, email, password);
+    public Etudiant (Long id, @NonNull String cin, @NonNull String nom, @NonNull String prenom, @NonNull Date dateNaissance, Byte photo, String cv, @NonNull String email, @NonNull String password, Collection<PublicationBean> pubs, @NonNull Date dateInscription, @NonNull String diplome, EnseignantChercheur encadrant) {
+        super(id, cin, nom, prenom, dateNaissance, photo, cv, email, password, pubs);
         this.dateInscription = dateInscription;
         this.diplome = diplome;
         this.encadrant = encadrant;

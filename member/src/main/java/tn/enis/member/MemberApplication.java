@@ -32,12 +32,12 @@ public class MemberApplication implements CommandLineRunner {
 				.dateInscription(new Date())
 				.dateNaissance(new Date())
 				.diplome("mastère")
-				.email("etd1@gmail.com")
+				.email("ahmed.sellami@enis.tn")
 				.password("pass1")
 				.cv("cv1")
-				.nom("abid")
-				.prenom("youssef)")
-				.diplome("blockhain")
+				.nom("sellami")
+				.prenom("ahmed)")
+				.diplome("expert linux")
 				.build();
 
 		memberService.addMember(etd1);
@@ -50,7 +50,7 @@ public class MemberApplication implements CommandLineRunner {
 				.email("etd2@gmail.com")
 				.password("pass2")
 				.cv("cv2")
-				.nom("abid")
+				.nom("hama")
 				.prenom("Ahmed)")
 				.diplome("blockhain")
 				.build();
@@ -59,9 +59,9 @@ public class MemberApplication implements CommandLineRunner {
 
 		EnseignantChercheur ens1 = EnseignantChercheur.builder()
 				.cin("123458")
-				.nom("firas")
-				.prenom("chakroun")
-				.email("ens1@gmail.com")
+				.nom("samir")
+				.prenom("Omar")
+				.email("om@om.com")
 				.password("pass2")
 				.etablissement("enis")
 				.dateNaissance(new Date())
@@ -75,7 +75,7 @@ public class MemberApplication implements CommandLineRunner {
 		EnseignantChercheur ens2 = EnseignantChercheur.builder()
 				.cin("123459")
 				.nom("firas")
-				.prenom("chakroun")
+				.prenom("lombok")
 				.email("ens1@gmail.com")
 				.password("pass2")
 				.etablissement("enis")
